@@ -1,0 +1,12 @@
+{
+  "Name": "更好的建筑升级",
+  "Author": "Nook",
+  "Version": "1.0.20",
+  "Description": "为游戏中的构建升级提供更多选项，可以来罗宾处购买。(可能和[更大的筒仓][更大的温室]冲突)",
+  "UniqueID": "Nook.BetterBuildingUpgrades",
+  "EntryDll": "BetterBuildingUpgrades.dll",
+  "MinimumApiVersion": "4.2.1",
+  "UpdateKeys": [
+    "Nexus:32366"
+  ]
+}

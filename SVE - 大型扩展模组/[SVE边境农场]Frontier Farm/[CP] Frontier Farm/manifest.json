@@ -1,0 +1,22 @@
+{
+  "Name": "SVE边境农场",
+  "Author": "FlashShifter",
+  "Version": "1.15.11",
+  "Description": "SVE边境农场 (创建存档时额外添加一个农场选项，与其他两个存档不冲突)",
+  "UniqueID": "flashshifter.FrontierFarm",
+  "UpdateKeys": ["Nexus:3753@FF"],
+  "MinimumApiVersion": "4.1.7",
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "Pathoschild.ContentPatcher",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+      "IsRequired": true
+    }
+  ]
+}

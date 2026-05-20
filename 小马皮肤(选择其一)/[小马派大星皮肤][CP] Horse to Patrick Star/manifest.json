@@ -1,0 +1,14 @@
+{
+  "Name": "[CP] 派大星",
+  "Author": "串串",
+  "Version": "1.0.0",
+  "Description": "把你的马变成派大星([依赖]AlternativeTextures)",
+  "UniqueID": "ChuanchuanXiang.PatrickStarCP",
+  "MinimumApiVersion": "1.0",
+  "UpdateKeys": [
+    "Nexus:19307"
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

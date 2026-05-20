@@ -1,0 +1,14 @@
+{
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  "UniqueID": "spacechase0.GenericModConfigMenu",
+  "Name": "通用MOD菜单",
+  "Author": "kittycatcasey",
+  "Version": "1.16.0",
+  "Description": "添加游戏内UI以编辑其他模组的配置选项(适用于支持它的模组)。",
+  "MinimumApiVersion": "4.1",
+  "MinimumGameVersion": "1.6.14",
+  "EntryDll": "GenericModConfigMenu.dll",
+  "UpdateKeys": [
+    "Nexus:5098"
+  ]
+}

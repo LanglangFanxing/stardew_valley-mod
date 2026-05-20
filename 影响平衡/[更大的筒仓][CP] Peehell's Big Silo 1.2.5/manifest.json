@@ -1,0 +1,13 @@
+{
+  "Name": "更大的筒仓",
+  "Author": "Peehell",
+  "Version": "1.2.5",
+  "Description": "往筒仓里加更多干草([依赖]ContentPatcher)",
+  "UniqueID": "Peehell.Peehells_Big_Silo",
+  "UpdateKeys": [
+    "Nexus:20712"
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

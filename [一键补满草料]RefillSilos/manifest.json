@@ -1,0 +1,12 @@
+{
+  "Name": "一键补满草料",
+  "Author": "Alpha_Omegasis",
+  "Version": "1.0.2",
+  "Description": "在动物商店添加一个【将干草填满所有筒仓】的选项。",
+  "UniqueID": "Omegasis.RefillSilos",
+  "EntryDll": "RefillSilos.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [
+    "Nexus:20779"
+  ]
+}

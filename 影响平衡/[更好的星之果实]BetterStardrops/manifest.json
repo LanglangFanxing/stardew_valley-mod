@@ -1,0 +1,13 @@
+{
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  "Name": "更好的星之果实",
+  "Author": "rokugin",
+  "Version": "1.4.1",
+  "Description": "获得星之果实可增加其他属性.",
+  "UniqueID": "rokugin.betterstardrops",
+  "EntryDll": "BetterStardrops.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [
+    "Nexus:21360"
+  ]
+}

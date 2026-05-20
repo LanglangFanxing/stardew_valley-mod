@@ -1,0 +1,14 @@
+{
+   "Name": "小马皮肤",
+   "Author": "Elle/Junimods",
+   "Version": "1.1.5",
+   "Description": "更换小马的皮肤([依赖]ContentPatcher)",
+   "UniqueID": "Elle.NewHorses",
+   "MinimumApiVersion": "2.5",
+   "UpdateKeys": [
+      "Nexus:3169"
+   ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   }
+}

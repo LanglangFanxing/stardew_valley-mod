@@ -1,0 +1,18 @@
+{
+  "Name": "背包升级",
+  "Author": "platinummyr",
+  "Version": "1.0.2",
+  "Description": "增加更多背包的升级选项([依赖]ContentPatcher、[依赖]CustomBackpackFramework)",
+  "UniqueID": "platinummyr.CPMoreBackpacks",
+  "MinimumApiVersion": "4.0.0",
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "platinummyr.CustomBackpackFramework",
+      "MinimumVersion": "1.0.0"
+    }
+  ],
+  "UpdateKeys": ["Nexus:21591"]
+}

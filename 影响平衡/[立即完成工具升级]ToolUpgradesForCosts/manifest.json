@@ -1,0 +1,12 @@
+{
+  "Name": "立即完成工具升级",
+  "Author": "N3xT",
+  "Version": "1.3.0",
+  "Description": "如果你支付更多的金币，你可以更早地拿到你的物品！",
+  "UniqueID": "N3xT.ToolUpgradesForCosts",
+  "EntryDll": "ToolUpgradesForCosts.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [
+    "Nexus: 39047"
+  ]
+}

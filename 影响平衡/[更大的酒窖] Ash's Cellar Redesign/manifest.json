@@ -1,0 +1,25 @@
+{
+  "Name": "更大的酒窖",
+  "Author": "Tortart",
+  "Version": "1.0.0",
+  "Description": "翻修农舍地窖([依赖]ContentPatcher)",
+  "UniqueID": "Tortart.AshsCellar",
+  "UpdateKeys": ["Nexus:35866"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "aedenthorn.ExtraMapLayers",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Lumisteria.LumiTilesheetsIndoor",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "aedenthorn.CustomSpouseRooms",
+      "IsRequired": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "Name": "更大的冰箱",
+  "Author": "Entoarox",
+  "Version": "1.1.1",
+  "Description": "将冰箱的容量调整到和大箱子一样.",
+  "UniqueID": "Entoarox.BiggerFridges",
+  "EntryDll": "BiggerFridges.dll",
+  "UpdateKeys": ["nexus:21678"]
+}

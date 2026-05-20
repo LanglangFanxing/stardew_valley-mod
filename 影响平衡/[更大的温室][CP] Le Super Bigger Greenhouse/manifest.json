@@ -1,0 +1,17 @@
+{
+  "Name": "更大的温室",
+  "Author": "Juanpa98ar",
+  "Version": "1.0.0",
+  "Description": "扩展温室([依赖]ContentPatcher)",
+  "UniqueID": "Juanpa98ar.GH.LSBG",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": ["Nexus:21948"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "DaisyNiko.Tilesheets"
+    }
+  ]
+}

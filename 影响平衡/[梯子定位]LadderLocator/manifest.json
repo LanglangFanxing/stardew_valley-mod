@@ -1,0 +1,12 @@
+﻿{
+    "Name": "梯子定位",
+    "Author": "ChaosEnergy",
+    "Version": "1.5.2",
+    "Description": "在矿井里找到梯子",
+    "UniqueID": "ChaosEnergy.LadderLocator",
+    "EntryDll": "LadderLocator.dll",
+    "MinimumApiVersion": "3.9",
+    "UpdateKeys": [
+        "Nexus:3094"
+    ]
+}

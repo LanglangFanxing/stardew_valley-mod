@@ -1,0 +1,12 @@
+﻿{
+    "Name": "穿过架子",
+    "Author": "NCarigon",
+    "Version": "1.2.3",
+    "Description": "允许农民穿过作物、树木和一些相关物体.",
+    "UniqueID": "NCarigon.PassableCrops",
+    "EntryDll": "PassableCrops.dll",
+    "MinimumApiVersion": "4.0.0",
+    "UpdateKeys": [
+        "nexus:15223"
+    ]
+}

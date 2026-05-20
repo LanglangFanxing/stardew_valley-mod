@@ -1,0 +1,13 @@
+{
+  "Name": "掉率修改",
+  "Author": "Seshnik",
+  "Version": "1.4.0",
+  "Description": "Allows you to customize the drop rates of certain items in the game (Wood, Stone, Ores, etc.)",
+  "UniqueID": "Seshnik.CustomDropRateMod",
+  "EntryDll": "CustomDropRateMod.dll",
+  "MinimumApiVersion": "3.0",
+  "UpdateKeys": [
+    "Nexus:31643"
+  ],
+  "Dependencies": []
+}

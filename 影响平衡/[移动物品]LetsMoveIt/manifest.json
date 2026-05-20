@@ -1,0 +1,12 @@
+﻿{
+  "Name": "移动物品",
+  "Author": "Exblosis",
+  "Version": "0.6.14",
+  "Description": "只需按下按钮即可移动所有内容。",
+  "UniqueID": "Exblosis.LetsMoveIt",
+  "EntryDll": "LetsMoveIt.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [
+    "Nexus:20943"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+   "Name": "骷髅矿洞电梯",
+   "Author": "lestoph",
+   "Version": "1.6.2",
+   "Description": "给骷髅矿洞添加一个电梯",
+   "UniqueID": "SkullCavernElevator",
+   "EntryDll": "SkullCavernElevator.dll",
+   "UpdateKeys": [
+      "Nexus:963"
+   ]
+}

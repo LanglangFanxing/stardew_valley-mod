@@ -1,0 +1,13 @@
+﻿{
+  "Name": "小马减肥",
+  "Author": "BadNetCode",
+  "Version": "1.0.0",
+  "Description": "修改小马碰撞箱的大小，使其能够纵向穿过一格宽的地形",
+  "UniqueID": "BadNetCode.PonyWeightLossProgram",
+  "EntryDll": "PonyWeightLossProgram.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [
+    "Nexus:1232",
+    "Moddrop:130159"
+  ]
+}

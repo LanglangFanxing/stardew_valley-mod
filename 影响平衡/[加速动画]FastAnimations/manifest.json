@@ -1,0 +1,12 @@
+{
+    "Name": "加速动画",
+    "Author": "Pathoschild",
+    "Version": "1.15.2",
+    "MinimumApiVersion": "4.2.0",
+    "Description": "加速游戏中的许多动画。",
+    "UniqueID": "Pathoschild.FastAnimations",
+    "EntryDll": "FastAnimations.dll",
+    "UpdateKeys": [
+        "Nexus:1089"
+    ]
+}

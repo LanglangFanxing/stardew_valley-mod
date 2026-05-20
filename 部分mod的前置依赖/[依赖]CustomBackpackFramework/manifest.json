@@ -1,0 +1,10 @@
+{
+  "Name": "AAA 前置Mod CustomBackpackFramework",
+  "Author": "platinummyr",
+  "Version": "1.1.0",
+  "Description": "定制背包框架与Stardew Valley 1.6兼容",
+  "UniqueID": "platinummyr.CustomBackpackFramework",
+  "EntryDll": "CustomBackpackFramework.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": ["Nexus:21588"]
+}

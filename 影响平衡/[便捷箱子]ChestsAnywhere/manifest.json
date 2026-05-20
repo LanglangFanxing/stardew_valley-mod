@@ -1,0 +1,12 @@
+{
+    "Name": "远程访问箱子",
+    "Author": "Pathoschild",
+    "Version": "1.29.0",
+    "MinimumApiVersion": "4.1.10",
+    "Description": "从任何地方访问你的箱子，可以自定义分组.",
+    "UniqueID": "Pathoschild.ChestsAnywhere",
+    "EntryDll": "ChestsAnywhere.dll",
+    "UpdateKeys": [
+        "Nexus:518"
+    ]
+}
