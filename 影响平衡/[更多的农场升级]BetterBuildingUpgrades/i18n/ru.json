@@ -1,0 +1,61 @@
+{
+    "big-greenhouse.name": "Большая Теплица",
+    "big-greenhouse.description": "Расширяет теплицу, позволяя выращивать больше культур.",
+
+    "deluxe-greenhouse.name": "Элитная Теплица",
+    "deluxe-greenhouse.description": "Элитная теплица с ночным освещением для ускорения роста культур и новой области.",
+
+
+    "big-silo.name": "Большая Силосная башня",
+    "big-silo.description": "Хранит в два раза больше сена, чем обычный силос.",
+
+    "deluxe-silo.name": "Элитный Силосная башня",
+    "deluxe-silo.description": "Хранит в два раза больше сена, чем большой силос.",
+
+    "grinding-silo.name": "Измельчающий Силос",
+    "grinding-silo.description": "Автоматически измельчает сено в мелкое сено. Дает больше счастья и дружбы животным.",
+
+    
+    "big-well.name": "Большой колодец",
+    "big-well.description": "Большой колодец, способный обеспечить водой Rice Shoot.",
+
+    "big-stable.name": "Большой Конюшня",
+    "big-stable.description": "Улучшите конюшню, чтобы лошадь могла бегать быстрее.",
+
+
+    "fine-hay.name": "Мелкое сено",
+    "fine-hay.description": "Сено, измельченное до более мелкой текстуры. Оно более питательно и делает животных счастливее.",
+
+
+    "compost-bin.name": "Компостный Контейнер",
+    "compost-bin.description": "Контейнер, который собирает компост от животных и превращает его в качественное удобрение.",
+
+    "compost-barn.name": "Сарай с Компостом",
+    "compost-barn.description": "Большой сарай с компостной зоной, который автоматически производит качественное удобрение из отходов животных.",
+
+    "compost-coop.name": "Курятник с Компостом",
+    "compost-coop.description": "Большой курятник с компостной зоной, который автоматически производит качественное удобрение из отходов животных.",
+
+    "standalone-cellar.name": "Отдельный Погреб",
+    "standalone-cellar.description": "Независимое здание погреба для выдержки сыра и вина.",
+
+    "big-standalone-cellar.name": "Большой Отдельный Погреб",
+    "big-standalone-cellar.description": "Более крупное независимое здание погреба для размещения большего количества бочек.",
+
+
+    "compost.empty": "Компостный контейнер пуст.",
+    "compost.inventory-full": "Ваш инвентарь полон!",
+    "compost.collected": "Собрано {{count}} Качественного Удобрения. В контейнере осталось {{remaining}}.",
+
+
+    "config.EnableGreenhouseUpgrade": "Включить обновление теплицы",
+    "config.EnableSiloUpgrade": "Включить обновление силоса",
+    "config.EnableWellUpgrade": "Включить обновление колодца",
+    "config.EnableStableUpgrade": "Включить обновление конюшни",
+    "config.EnableBarnUpgrade": "Включить обновление сарая",
+    "config.EnableCoopUpgrade": "Включить обновление курятника",
+    "config.EnableCellarBuilding": "Включить здание погреба",
+
+    "config.RetextureCompatibilityMode": "Режим совместимости с ретекстуром",
+    "config.FrontierFarmCompatibilityMode": "Режим совместимости с пограничной фермой"
+}

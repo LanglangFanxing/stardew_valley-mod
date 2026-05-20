@@ -1,0 +1,360 @@
+  Custom Drop Rate Mod — Config Guide
+  Author : Seshnik
+  Nexus  : https://www.nexusmods.com/stardewvalley/mods/31643
+
+
+  The easiest way to configure this mod is in-game via the Generic Mod Config
+  Menu (GMCM). This file is for players who prefer to edit config.json directly.
+
+  WARNING: If the game saves your config (on launch or when closing GMCM).
+  config.json is rewritten as plain JSON so any comments you add will be lost.
+  Edit the file before launching the game, or use GMCM in-game instead.
+
+
+
+
+  HOW MULTIPLIERS WORK
+
+  All multipliers default to 1.0 (vanilla, no change).
+  Setting a multiplier above 1.0 spawns EXTRA items on top of what the game
+  already drops.
+
+  Examples:
+    1.0  = vanilla (mod does nothing)
+    2.0  = double drops
+    3.0  = triple drops
+    1.5  = 50% more
+
+  Minimum value: 1.0
+  Any value below 1.0 in config.json is automatically corrected to 1.0 on load.
+  I have not found a way to reduce the drop rates in the game cleanly.
+
+  Multipliers step in 0.5 increments when using GMCM (1.0, 1.5, 2.0 ... 10.0).
+  You can set any float value manually here (e.g. 1.25, 3.75), though I recomend following the standard;
+  1.0  /  1.5  /  2.0  / Etc.
+
+
+
+
+
+  HOW QUALITY WORKS
+
+  Quality settings force a specific quality on drops.
+  They apply only to features that support quality (Fruit Trees, Mushrooms,
+  Foraging, and Artisan Machines.)
+
+  Valid values:
+    -1 = Default (quality is not touched, vanilla behaviour)
+     0 = Normal
+     1 = Silver
+     2 = Gold
+     4 = Iridium
+     NOTE: SDV skips "3", so Gold = 2, Iridium = 4.
+
+  Any other value is automatically corrected to -1 (off) on load.
+
+  Setting a quality overrides whatever quality the item would normally have.
+  Example: Botanist gives iridium (4). If quality = Gold (2), result = gold.
+  If you want iridium, set Iridium, or set back to Default for vanilla behaviour.
+
+  Mushroom quality note:
+    MushroomMinQuality and ForageMinQuality interact for mushrooms picked up
+    as forage (cave mushrooms, mine mushrooms, overworld mushrooms).
+    MushroomMinQuality overrides ForageMinQuality for mushrooms when both are set.
+    Example: ForageMinQuality = Silver (1), MushroomMinQuality = Gold (2)
+    mushrooms get Gold, other forage gets Silver.
+
+
+
+
+
+
+  SECTION: BASIC RESOURCES
+
+  WoodDropMultiplier
+    Extra wood from chopping Oak, Maple, Pine, Palm, and Green Rain trees.
+    Default: 1.0
+
+  MahoganyDropMultiplier
+    Extra hardwood from Mahogany trees and large stumps/logs (resource clumps).
+    Default: 1.0
+
+  StoneDropMultiplier
+    Extra stone from rocks, stone nodes, and stone boulders.
+    Default: 1.0
+
+  ClayDropMultiplier
+    Extra clay from clay nodes (ID 818) and artifact spot clay drops.
+    Artifact spots that yield clay automatically use this value, not the
+    ArtifactSpotDropMultiplier!
+    Default: 1.0
+
+  CoalDropMultiplier
+    Extra coal from coal nodes (volcano and basic variants).
+    Default: 1.0
+
+  WeedDropMultiplier
+    Extra Fiber from cutting weeds. Also applies to Fiber drops from
+    Green Rain weeds specifically.
+    Default: 1.0
+
+  HayDropMultiplier
+    Extra hay added to silos when cutting grass.
+    Default: 1.0
+
+  MossDropMultiplier
+    Extra Moss from three sources:
+      1. Scything mossy trees (any tree with moss after Green Rain or planted)
+      2. Green Rain weeds that drop Moss.
+      3. Destroying Green Rain moss bushes (the 2x2 clumps that form during rain)
+    The Mossy Seed rare drop (5% from moss bushes) is intentionally not multiplied here.
+    Seed Multiplier controls the seed drops.
+    Default: 1.0
+
+
+
+
+
+  SECTION: ORES
+
+  CopperDropMultiplier
+    Extra Copper Ore from copper nodes AND copper panned from rivers.
+    Default: 1.0
+
+  IronDropMultiplier
+    Extra Iron Ore from iron nodes AND iron panned from rivers.
+    Default: 1.0
+
+  GoldDropMultiplier
+    Extra Gold Ore from gold nodes (including Volcano region) AND gold panned.
+    Default: 1.0
+
+  IridiumDropMultiplier
+    Extra Iridium Ore from iridium nodes, meteor resource clumps, AND
+    iridium panned from rivers.
+    Default: 1.0
+
+  RadioactiveDropMultiplier
+    Extra Radioactive Ore from radioactive nodes.
+    Default: 1.0
+
+  NOTE ON PANNING:
+    Panning does not have its own multiplier. Whatever ore the pan produces
+    (Copper/Iron/Gold/Iridium) uses the matching ore multiplier above.
+    Other pan drops (Refined Quartz, Taro Tuber, fish, Mystery Box) are
+    not affected by any multipliers.
+
+
+
+
+
+  SECTION: GEMS & SPECIALS
+
+  MineralDropMultiplier
+    Extra gems from gem nodes (Amethyst, Diamond, Ruby, Jade, Topaz,
+    Emerald, Aquamarine) and the Mystic Stone (which has a weighted random
+    drop of Prismatic Shard / Iridium Ore / Diamond).
+    Default: 1.0
+
+  GeodeDropMultiplier
+    Extra geodes from geode nodes (Geode, Frozen, Magma, Omni Geode).
+    This affects geode ITEMS dropped as debris, not the contents when cracked at the Smithy.
+    Default: 1.0
+
+  CinderShardDropMultiplier
+    Extra Cinder Shards from cinder shard nodes in the Volcano Mine.
+    Default: 1.0
+
+  CalicoEggDropMultiplier
+    Extra Calico Eggs from Calico Egg stones during the Desert Festival.
+    Default: 1.0
+
+  BoneDropMultiplier
+    Extra Bone Fragments from bone nodes in the Dig Site (node IDs 816, 817).
+    Does NOT affect fossil items (823, 824) as those are different things entirely.
+    Default: 1.0
+
+
+
+
+
+  SECTION: FISH PONDS
+
+  ForceDailySpawn
+    If set to true, fish ponds always produce an item every day when the output
+    slot is empty. Overrides the pond's normal production chance.
+    Values: true / false
+    Default: false
+
+  PondQuantityMultiplier
+    Multiplies the MinStack/MaxStack of non-roe pond outputs.
+    Default: 1.0
+
+  ForceRoeOnly
+    If true, suppresses all non-roe pond outputs. Only roe is produced.
+    If ForceDailySpawn is also true, roe is guaranteed daily.
+    Values: true / false
+    Default: false
+
+  RoeQuantityMultiplier
+    Multiplies the MinStack/MaxStack of roe produced by fish ponds.
+    Default: 1.0
+
+
+
+
+
+  SECTION: GATHERING
+
+  FruitTreeDropMultiplier
+    Extra fruit when shaking fruit trees. Applies to all fruit tree varieties.
+    Lightning-struck trees (drop coal instead of fruit) are not multiplied.
+    Quality of extras matches the tree's current quality tier.
+    Default: 1.0
+
+  FruitTreeMinQuality
+    Minimum quality for fruit drops.
+    See "HOW QUALITY WORKS" section near the top of the file..
+    Default: -1 (off)
+
+  TapperProductMultiplier
+    Multiplies the stack size of tapper and heavy tapper outputs when ready.
+    Covers: Oak Resin, Maple Syrup, Pine Tar, and Mushroom Tree tapper
+    outputs (Red Mushroom, Purple Mushroom, Common Mushroom).
+    Default: 1.0
+
+  MushroomDropMultiplier
+    Extra mushrooms from all sources:
+      1. Shaking a Mushroom Tree
+      2. Collecting output from a Mushroom Log
+      3. Picking up forage mushrooms (farm cave, mines, volcano, overworld)
+    For forage mushrooms, the higher of MushroomDropMultiplier and
+    ForageQuantityMultiplier applies. Whichever is higher takes effect.
+    Default: 1.0
+
+  MushroomMinQuality
+    Forces a specific quality on all mushroom drops (shake, Mushroom Log,
+    and forage mushrooms). For forage mushrooms, the higher of
+    MushroomMinQuality and ForageMinQuality takes effect.
+    See "HOW QUALITY WORKS" above.
+    Default: -1 (off)
+
+  ForageQuantityMultiplier
+    Extra drops of any forage item when picked up directly.
+    Covers: overworld forage (berries, ferns, etc.), spring onions,
+    farm cave mushrooms, mine/volcano forage mushrooms.
+    Does NOT affect crops.
+    Default: 1.0
+
+  ForageMinQuality
+    Minimum quality floor for extra forage copies.
+    For mushrooms, the higher of ForageMinQuality and MushroomMinQuality takes effect.
+    See "HOW QUALITY WORKS" above.
+    Default: -1 (off)
+
+
+
+
+
+  SECTION: MACHINES
+
+
+  KegOutputMultiplier
+    Extra output stack from Kegs (Wine, Juice, Beer, Mead, Pale Ale).
+    Default: 1.0
+
+  KegMinQuality
+    Minimum quality for Keg output. Default: -1 (off)
+
+  PreservesOutputMultiplier
+    Extra output stack from Preserves Jars (Jelly, Pickles).
+    Default: 1.0
+
+  PreservesMinQuality
+    Minimum quality for Preserves Jar output. Default: -1 (off)
+
+  CheeseOutputMultiplier
+    Extra output stack from Cheese Presses (Cheese, Goat Cheese).
+    Default: 1.0
+
+  CheeseMinQuality
+    Minimum quality for Cheese Press output. Default: -1 (off)
+
+  MayonnaiseOutputMultiplier
+    Extra output stack from Mayonnaise Machines
+    (Mayonnaise, Duck Mayo, Void Mayo, Dinosaur Mayo).
+    Default: 1.0
+
+  MayonnaiseMinQuality
+    Minimum quality for Mayo Machine output. Default: -1 (off)
+
+  BeeHouseOutputMultiplier
+    Extra Honey stack from Bee Houses.
+    Default: 1.0
+
+  LoomOutputMultiplier
+    Extra Cloth from Looms.
+    Default: 1.0
+
+  OilMakerOutputMultiplier
+    Extra Oil or Truffle Oil from Oil Makers.
+    Default: 1.0
+
+  FurnaceOutputMultiplier
+    Extra bars from Furnaces (Copper, Iron, Gold, Iridium Bar, Refined Quartz).
+    Default: 1.0
+
+  SeedMakerOutputMultiplier
+    Extra seeds from Seed Makers. Applies to whatever seeds are produced,
+    regardless of crop type.
+    Default: 1.0
+
+
+
+
+  SECTION: COMBAT & EXPLORATION
+
+
+  MonsterDropMultiplier
+    Extra item drops from monster kills. Bat wings, slime, cloth,
+    void essence, mixed seeds, and anything not covered by a more
+    specific multiplier.
+    The following monster drops use their own dedicated multiplier instead:
+      Coal          → CoalDropMultiplier
+      Copper Ore    → CopperDropMultiplier
+      Iron Ore      → IronDropMultiplier
+      Gold Ore      → GoldDropMultiplier
+      Iridium Ore   → IridiumDropMultiplier
+      Radioactive Ore → RadioactiveDropMultiplier
+      Bone Fragments  → BoneDropMultiplier
+    Default: 1.0
+
+  ArtifactSpotDropMultiplier
+    Extra items dug from artifact spots (wigglyh worm tiles).
+    Covers artifacts, mixed seeds and other worm tile drops.
+    Clay drops from artifact spots use ClayDropMultiplier instead.
+    Mystery Box spawns are not affected.
+    Default: 1.0
+
+
+
+
+
+  TROUBLESHOOTING
+
+
+  Mod doing nothing?
+    Check SMAPI console on launch for any [CDR] error messages.
+    A "Could not find" message means a game method wasn't located,
+    the game may have updated. Check Nexus for a mod update.
+
+  Settings not saving?
+    Use GMCM in-game to save, editing config.json while the game is
+    running will have no effect until the next launch.
+
+  Quality not changing?
+    Quality require the value to be 0 or higher. -1 = off.
+
+  A value I set below 1.0 got changed to 1.0?
+    This is intentional. The mod cannot reduce vanilla drops below vanilla.
+    Sub 1.0 values are automatically corrected to 1.0 on load.

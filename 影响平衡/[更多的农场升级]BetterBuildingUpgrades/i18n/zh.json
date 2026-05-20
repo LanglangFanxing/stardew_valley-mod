@@ -1,0 +1,59 @@
+{
+    "big-greenhouse.name": "大温室",
+    "big-greenhouse.description": "扩展温室空间以种植更多作物。",
+
+    "deluxe-greenhouse.name": "高级温室",
+    "deluxe-greenhouse.description": "豪华温室，配有夜间照明以加速作物生长，包含一个新区域。",
+
+    
+    "big-silo.name": "大筒仓",
+    "big-silo.description": "可储存两倍量的草料。",
+
+    "deluxe-silo.name": "高级筒仓",
+    "deluxe-silo.description": "可储存四倍量的草料。",
+
+    "grinding-silo.name": "研磨筒仓",
+    "grinding-silo.description": "自动将干草研磨成细干草。为动物提供更好的饮食。",
+
+    
+    "big-well.name": "大水井",
+    "big-well.description": "更大的水井，可以为稻苗提供水源。",
+
+    "big-stable.name": "大马厩",
+    "big-stable.description": "一个舒适的马厩，让你的马跑得更快。",
+
+
+    "fine-hay.name": "细干草",
+    "fine-hay.description": "被精细研磨的干草。它更有营养，让动物更快乐。",
+
+    "compost-bin.name": "堆肥箱",
+    "compost-bin.description": "一个收集动物堆肥并将其转化为优质肥料的箱子。",
+
+    "compost-barn.name": "堆肥畜棚",
+    "compost-barn.description": "一个带有堆肥区的加大畜棚，可以将动物粪便转化为优质肥料。",
+    "compost-coop.name": "堆肥鸡舍",
+    "compost-coop.description": "一个带有堆肥区的加大鸡舍，可以将动物粪便转化为优质肥料。",
+
+    "standalone-cellar.name": "独立酒窖",
+    "standalone-cellar.description": "一个独立的地下酒窖，用于陈酿奶酪和酒类。",
+
+    "big-standalone-cellar.name": "大型独立酒窖",
+    "big-standalone-cellar.description": "一个更大的独立酒窖，可以放置更多木桶。",
+
+
+    "compost.empty": "堆肥箱是空的。",
+    "compost.inventory-full": "你的背包已满！",
+    "compost.collected": "收集了 {{count}} 个优质肥料。箱中还剩 {{remaining}} 个。",
+
+
+    "config.EnableGreenhouseUpgrade": "启用温室升级",
+    "config.EnableSiloUpgrade": "启用筒仓升级",
+    "config.EnableWellUpgrade": "启用水井升级",
+    "config.EnableStableUpgrade": "启用马厩升级",
+    "config.EnableBarnUpgrade": "启用畜棚升级",
+    "config.EnableCoopUpgrade": "启用鸡舍升级",
+    "config.EnableCellarBuilding": "启用酒窖建筑",
+
+    "config.RetextureCompatibilityMode": "纹理Mod兼容模式",
+    "config.FrontierFarmCompatibilityMode": "Frontier Farm边境农场兼容模式"
+}

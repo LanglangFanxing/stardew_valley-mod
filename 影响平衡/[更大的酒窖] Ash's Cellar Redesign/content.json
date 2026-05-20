@@ -1,0 +1,29 @@
+{
+  "Format": "2.0",
+  "ConfigSchema": {
+    "Clean up cellar?": {
+      "AllowValues": "True, False",
+      "Default": "False",
+      "Description": "Check box to load clean cellar."
+    }
+  },
+
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Maps/Cellar",
+      "FromFile": "assets/Cellar.tbin",
+      "When": {
+        "Clean up cellar?": "False"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/Cellar",
+      "FromFile": "assets/Cellar_Clean.tbin",
+      "When": {
+        "Clean up cellar?": "True"
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+﻿{
+    "NCarigon.PassableCrops/config_name_Crops": "作物",
+    "NCarigon.PassableCrops/config_desc_Crops": "允许农夫穿过所有作物。",
+
+    "NCarigon.PassableCrops/config_name_Scarecrows": "稻草人",
+    "NCarigon.PassableCrops/config_desc_Scarecrows": "允许农夫穿过稻草人。",
+
+    "NCarigon.PassableCrops/config_name_Sprinklers": "洒水器",
+    "NCarigon.PassableCrops/config_desc_Sprinklers": "允许农夫穿过洒水器。",
+
+    "NCarigon.PassableCrops/config_name_Forage": "采集物",
+    "NCarigon.PassableCrops/config_desc_Forage": "允许农夫穿过采集物。",
+
+    "NCarigon.PassableCrops/config_name_Tea": "茶树丛",
+    "NCarigon.PassableCrops/config_desc_Tea": "允许农夫穿过茶树丛。",
+
+    "NCarigon.PassableCrops/config_name_TreeGrowth": "树木 - 生长阶段",
+    "NCarigon.PassableCrops/config_desc_TreeGrowth": "允许农夫穿过树苗，直到你设定的生长阶段为止。",
+
+    "NCarigon.PassableCrops/config_name_FruitGrowth": "果树 - 生长阶段",
+    "NCarigon.PassableCrops/config_desc_FruitGrowth": "允许农夫穿过果树苗，直到你设定的生长阶段为止。",
+
+    "NCarigon.PassableCrops/config_name_Weeds": "杂草",
+    "NCarigon.PassableCrops/config_desc_Weeds": "允许农夫穿过杂草。",
+
+    "NCarigon.PassableCrops/config_name_AllPass": "所有实体均可穿过",
+    "NCarigon.PassableCrops/config_desc_AllPass": "让选中的障碍物对所有实体都可穿过，而不只是农夫。这会明显影响怪物穿过杂草等情况。",
+
+    "NCarigon.PassableCrops/config_name_SlowDown": "穿过时减速",
+    "NCarigon.PassableCrops/config_desc_SlowDown": "农夫穿过这些物体时会稍微变慢，就像走在高草里一样。",
+
+    "NCarigon.PassableCrops/config_name_Shake": "穿过时晃动",
+    "NCarigon.PassableCrops/config_desc_Shake": "经过时让非作物物体产生晃动效果（作物会自动晃动）。",
+
+    "NCarigon.PassableCrops/config_name_Rustle": "同时播放沙沙声",
+    "NCarigon.PassableCrops/config_desc_Rustle": "穿过这些物体时也会播放沙沙声。",
+
+    "NCarigon.PassableCrops/config_name_CustomDraw": "使用自定义绘制",
+    "NCarigon.PassableCrops/config_desc_CustomDraw": "某些物体需要使用自定义绘制逻辑，才能正确晃动并计算图层深度。这套逻辑可能与其他模组不兼容。关闭此选项会禁用自定义绘制，并可能避免由此产生的错误。如果当前没有问题，不建议关闭自定义绘制。",
+
+    "NCarigon.PassableCrops/config_name_Include": "包含名称",
+    "NCarigon.PassableCrops/config_desc_Include": "指定可穿过的单独物体，可使用基础名称或限定物品 ID，例如 Twig 或 (O)294。多个条目请用逗号分隔。",
+
+    "NCarigon.PassableCrops/config_name_Exclude": "排除名称",
+    "NCarigon.PassableCrops/config_desc_Exclude": "指定不可穿过的单独物体，可使用基础名称或限定物品 ID，例如 Twig 或 (O)294。多个条目请用逗号分隔。"
+}

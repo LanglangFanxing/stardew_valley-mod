@@ -1,0 +1,20 @@
+{
+  "WoodDropMultiplier": 10.0,
+  "MahoganyDropMultiplier": 10.0,
+  "StoneDropMultiplier": 10.0,
+  "CoalDropMultiplier": 10.0,
+  "ClayDropMultiplier": 10.0,
+  "CopperDropMultiplier": 10.0,
+  "IronDropMultiplier": 10.0,
+  "GoldDropMultiplier": 10.0,
+  "IridiumDropMultiplier": 10.0,
+  "MineralDropMultiplier": 10.0,
+  "CinderShardDropMultiplier": 10.0,
+  "GeodeDropMultiplier": 10.0,
+  "RadioactiveDropMultiplier": 10.0,
+  "CalicoEggDropMultiplier": 10.0,
+  "RoeQuantityMultiplier": 10.0,
+  "ForceDailySpawn": true,
+  "ForceRoeOnly": true,
+  "PondQuantityMultiplier": 10.0
+}

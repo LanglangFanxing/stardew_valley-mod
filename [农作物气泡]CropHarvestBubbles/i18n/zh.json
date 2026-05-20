@@ -1,0 +1,9 @@
+{
+  "GMCM_Option_ModEnabled_Name": "启用模组",
+  "GMCM_Option_IgnoreFlowers_Name": "忽略花卉",
+  "GMCM_Option_IgnorePots_Name": "忽略花盆",
+  "GMCM_Option_OpacityPercent_Name": "不透明度百分比",
+  "GMCM_Option_SizePercent_Name": "大小百分比",
+  "GMCM_Option_PressKeys_Name": "按键设置",
+  "GMCM_Option_RequireKeyPress_Name": "需要按键触发"
+}

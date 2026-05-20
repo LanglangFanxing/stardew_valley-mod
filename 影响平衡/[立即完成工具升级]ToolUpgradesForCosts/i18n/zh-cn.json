@@ -1,0 +1,13 @@
+{
+  "crafting-window": "我能让你的工具更强大…不过得加钱。",
+  "instant-offer-text": "你想支付{cost}金让我立刻升级工具吗？",
+  "post-purchase-dialogue": "我两天后能完工。到时候再来吧。",
+  "speed-boost-cost-dialogue": "可选择立即升级！额外费用：升级费用的{costPercentage}%。",
+  "cost-applied": "已应用立即升级费用：{CostAmount}金",
+  "not-enough-money": "用于立即升级的钱不够！需要：{CostAmount}金",
+  "clint-insufficient-funds": "啊哦！你的钱不够立即升级。不过我还是会帮你做的，两天后再来吧！",
+  "clint-thanks": "谢谢。希望升级后的工具对你很有用！",
+  "instant-yes": "好的",
+  "instant-no": "不用了",
+  "clint-decline": "好吧，我来处理——两天后再来吧。"
+}

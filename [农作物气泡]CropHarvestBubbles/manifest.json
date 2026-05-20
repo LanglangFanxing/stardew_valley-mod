@@ -1,12 +1,10 @@
 ﻿{
-	"Name": "农作物气泡",
-	"Author": "aedenthorn",
-	"Version": "0.5.0",
-	"Description": "农作物成熟后显示一个气泡提示",
-	"UniqueID": "aedenthorn.CropHarvestBubbles",
-	"EntryDll": "CropHarvestBubbles.dll",
-	"MinimumApiVersion": "4.0.0",
-	"UpdateKeys": [
-		"Nexus:17761"
-	]
+  "Name": "农作物气泡",
+  "Author": "aedenthorn",
+  "Version": "0.6.2",
+  "Description": "农作物成熟后显示一个气泡提示",
+  "UniqueID": "aedenthorn.CropHarvestBubbles",
+  "EntryDll": "CropHarvestBubbles.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": ["Nexus:17761"]
 }

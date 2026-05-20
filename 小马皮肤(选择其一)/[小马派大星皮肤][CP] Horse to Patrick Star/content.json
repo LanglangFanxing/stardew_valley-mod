@@ -1,0 +1,18 @@
+{
+   "Format": "1.29.0",
+
+   "Changes": [
+      {
+         "Action": "EditImage",
+         "Target": "Animals/horse",
+         "FromFile": "assets/horse.png",
+      },
+
+	  {
+	"Action": "EditImage",
+	"Target": "LooseSprites/Cursors.xnb",
+	"FromFile": "assets/horsecursor.png",
+	"ToArea": { "X": 192, "Y": 192, "Width": 16, "Height": 16 },
+	  },
+   ]
+}

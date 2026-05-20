@@ -1,20 +1,16 @@
 ﻿{
   "Name": "调整视距",
   "Author": "thespbgamer",
-  "Version": "4.4.0",
+  "Version": "4.5.1",
   "Description": "使用简单的键绑定更改缩放、UI级别和相机位置。现在使用缩放随机化器！",
   "UniqueID": "thespbgamer.ZoomLevel",
   "EntryDll": "ZoomLevel.dll",
-  "MinimumApiVersion": "4.2.1",
-  "UpdateKeys": [
-    "GitHub:thespbgamer/ZoomLevel",
-    "Nexus:7363",
-    "CurseForge:714275"
-  ],
+  "MinimumApiVersion": "4.5.1",
+  "UpdateKeys": ["GitHub:thespbgamer/ZoomLevel", "Nexus:7363", "CurseForge:714275"],
   "Dependencies": [
     {
       "UniqueID": "spacechase0.GenericModConfigMenu",
-      "MinimumVersion": "1.15.0",
+      "MinimumVersion": "1.16.0",
       "IsRequired": false
     }
   ]

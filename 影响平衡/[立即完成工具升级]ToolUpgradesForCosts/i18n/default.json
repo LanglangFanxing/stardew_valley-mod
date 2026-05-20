@@ -1,0 +1,13 @@
+{
+  "crafting-window": "I can make your tools more powerful, but for extra gold.",
+  "instant-offer-text": "Would you like to pay {cost}g to get your tool upgraded immediately? ",
+  "post-purchase-dialogue": "I'll be done in two days. Come back then.",
+  "speed-boost-cost-dialogue": "Instant upgrade available! Additional cost: {costPercentage}% of upgrade cost.",
+  "cost-applied": "Instant upgrade cost applied: {CostAmount}g",
+  "not-enough-money": "Not enough money for instant upgrade cost! Needed: {CostAmount}g",
+  "clint-insufficient-funds": "Oops! You don't have enough money for the instant upgrade. I'll take care of this for you, come back in two days!",
+  "clint-thanks": "Thanks. I hope you get a lot of use out of your upgraded tool!",
+  "instant-yes": "Yes",
+  "instant-no": "No",
+  "clint-decline": "Alright, I'll do it - come back in two days."
+}

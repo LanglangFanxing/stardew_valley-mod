@@ -1,0 +1,61 @@
+{
+    "big-greenhouse.name": "大型の温室",
+    "big-greenhouse.description": "温室を拡張し、より多くの作物を栽培できるようにする。",
+
+    "deluxe-greenhouse.name": "デラックス温室",
+    "deluxe-greenhouse.description": "夜間照明付きのデラックス温室で、作物の成長を加速させ、新しいエリアを追加します。",
+
+
+    "big-silo.name": "大型のサイロ",
+    "big-silo.description": "通常のサイロの2倍の干し草を保管できます。",
+
+    "deluxe-silo.name": "デラックスサイロ",
+    "deluxe-silo.description": "大きなサイロの2倍の干し草を貯蔵できる。",
+
+    "grinding-silo.name": "粉砕サイロ",
+    "grinding-silo.description": "自動的に干草を細かい干草に粉砕します。動物により多くの幸福と友情を与えます。",
+
+    
+    "big-well.name": "大型の井戸",
+    "big-well.description": "ライス・シュートに水を供給できる大きめの井戸。",
+
+    "big-stable.name": "大型の厩舎",
+    "big-stable.description": "厩舎をアップグレードして、馬をより速く走らせる。",
+
+
+    "fine-hay.name": "細かい干し草",
+    "fine-hay.description": "より細かい質感に粉砕された干し草。より栄養価が高く、動物をより幸せにします。",
+
+
+    "compost-bin.name": "堆肥箱",
+    "compost-bin.description": "動物から堆肥を収集し、高品質の肥料に変換する箱。",
+
+    "compost-barn.name": "堆肥納屋",
+    "compost-barn.description": "堆肥エリアを備えた大きな納屋で、動物の排泄物から高品質の肥料を自動的に生産します。",
+
+    "compost-coop.name": "堆肥小屋",
+    "compost-coop.description": "堆肥エリアを備えた大きな小屋で、動物の排泄物から高品質の肥料を自動的に生産します。",
+
+    "standalone-cellar.name": "独立したセラー",
+    "standalone-cellar.description": "チーズやワインを熟成させるための独立したセラー建物。",
+
+    "big-standalone-cellar.name": "大型独立セラー",
+    "big-standalone-cellar.description": "より多くの樽を配置できる大きな独立したセラー建物。",
+
+
+    "compost.empty": "堆肥箱は空です。",
+    "compost.inventory-full": "インベントリがいっぱいです！",
+    "compost.collected": "{{count}}個の高品質肥料を回収しました。箱に{{remaining}}個残っています。",
+
+
+    "config.EnableGreenhouseUpgrade": "温室アップグレードを有効にする",
+    "config.EnableSiloUpgrade": "サイロアップグレードを有効にする",
+    "config.EnableWellUpgrade": "井戸アップグレードを有効にする",
+    "config.EnableStableUpgrade": "厩舎アップグレードを有効にする",
+    "config.EnableBarnUpgrade": "納屋アップグレードを有効にする",
+    "config.EnableCoopUpgrade": "小屋アップグレードを有効にする",
+    "config.EnableCellarBuilding": "セラー建物を有効にする",
+
+    "config.RetextureCompatibilityMode": "リテクスチャー互換モード",
+    "config.FrontierFarmCompatibilityMode": "フロンティアファーム互換モード"
+}

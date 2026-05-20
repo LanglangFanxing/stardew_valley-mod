@@ -1,0 +1,61 @@
+{
+    "big-greenhouse.name": "Big Greenhouse",
+    "big-greenhouse.description": "A larger greenhouse with more room for crops.",
+
+    "deluxe-greenhouse.name": "Deluxe Greenhouse",
+    "deluxe-greenhouse.description": "Deluxe greenhouse with night lighting to speed up crop growth. Includes additional space..",
+
+
+    "big-silo.name": "Big Silo",
+    "big-silo.description": "Holds twice as much hay as a regular silo.",
+
+    "deluxe-silo.name": "Deluxe Silo",
+    "deluxe-silo.description": "Holds twice as much hay as a big silo.",
+
+    "grinding-silo.name": "Grinding Silo",
+    "grinding-silo.description": "Automatically grinds hay into fine hay, which keeps your animals happier.",
+
+    
+    "big-well.name": "Big Well",
+    "big-well.description": "Larger well that provides water to Rice Shoot.",
+
+    "big-stable.name": "Big Stable",
+    "big-stable.description": "A comfortable stable that allows your horse run faster.",
+
+ 
+    "fine-hay.name": "Fine Hay",
+    "fine-hay.description": "Finely-ground hay. Keeps animals happier and healthier.",
+
+
+    "compost-bin.name": "Compost Bin",
+    "compost-bin.description": "Turns animal waste into quality fertilizer.",
+
+    "compost-barn.name": "Compost Barn",
+    "compost-barn.description": "A larger barn with a compost area that automatically produces quality fertilizer from animal waste.",
+
+    "compost-coop.name": "Compost Coop",
+    "compost-coop.description": "A larger coop with a compost area that automatically produces quality fertilizer from animal waste.",
+
+
+    "standalone-cellar.name": "Standalone Cellar",
+    "standalone-cellar.description": "An independent cellar for aging cheese and wine.",
+
+    "big-standalone-cellar.name": "Big Standalone Cellar",
+    "big-standalone-cellar.description": "A larger independent cellar for placing more casks.",
+
+
+    "compost.empty": "The compost bin is empty.",
+    "compost.inventory-full": "Your inventory is full!",
+    "compost.collected": "Collected {{count}} Quality Fertilizer. {{remaining}} remaining in the bin.",
+
+
+    "config.EnableGreenhouseUpgrade": "Enable Greenhouse Upgrade",
+    "config.EnableSiloUpgrade": "Enable Silo Upgrade",
+    "config.EnableWellUpgrade": "Enable Well Upgrade",
+    "config.EnableStableUpgrade": "Enable Stable Upgrade",
+    "config.EnableBarnUpgrade": "Enable Barn Upgrade",
+    "config.EnableCoopUpgrade": "Enable Coop Upgrade",
+
+    "config.RetextureCompatibilityMode": "Retexture Compatibility Mode",
+    "config.FrontierFarmCompatibilityMode": "Frontier Farm Compatibility Mode"
+}

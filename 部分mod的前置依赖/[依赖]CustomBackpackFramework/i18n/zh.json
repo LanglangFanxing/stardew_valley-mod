@@ -1,0 +1,13 @@
+﻿{
+  "backpack-upgrade-x": "背包升级 - {0}格",
+  "buy-backpack-for-x": "购买（{0:#,##0}金）",
+  "farmer-bought-x": "{{0}} 购买了{0}。",
+
+  // GMCM
+ "GMCM_Option_ModEnabled_Name": "启用模组",
+  "GMCM_Option_ShowArrows_Name": "显示箭头",
+  "GMCM_Option_ShowRowNumbers_Name": "显示行号",
+  "GMCM_Option_MinHandleHeight_Name": "最小手柄高度",
+  "GMCM_Option_ShowExpandedButton_Name": "展开按钮",
+  "GMCM_Option_ShiftRows_Name": "要移动的工具栏行数"
+}

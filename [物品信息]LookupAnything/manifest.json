@@ -1,13 +1,11 @@
 {
-    "Name": "物品信息",
-    "Author": "Pathoschild",
-    "Version": "1.52.2",
-    "MinimumApiVersion": "4.3.1",
-    "MinimumGameVersion": "1.6.15",
-    "Description": "按下快捷键可以查看当前鼠标所指物品的百科。",
-    "UniqueID": "Pathoschild.LookupAnything",
-    "EntryDll": "LookupAnything.dll",
-    "UpdateKeys": [
-        "Nexus:541"
-    ]
+  "Name": "物品信息",
+  "Author": "Pathoschild",
+  "Version": "1.55.0",
+  "MinimumApiVersion": "4.3.1",
+  "MinimumGameVersion": "1.6.15",
+  "Description": "按下快捷键可以查看当前鼠标所指物品的百科。",
+  "UniqueID": "Pathoschild.LookupAnything",
+  "EntryDll": "LookupAnything.dll",
+  "UpdateKeys": ["Nexus:541"]
 }

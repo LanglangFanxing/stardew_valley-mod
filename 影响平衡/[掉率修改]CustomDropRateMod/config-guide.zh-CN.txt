@@ -1,0 +1,331 @@
+Custom Drop Rate Mod - 中文配置说明
+作者: Seshnik
+原始页面: https://www.nexusmods.com/stardewvalley/mods/31643
+
+
+最简单的配置方式，是在游戏内通过 Generic Mod Config Menu (GMCM) 修改。
+这个文件适合想直接编辑 config.json 的玩家。
+
+警告:
+如果游戏在启动时或关闭 GMCM 时保存配置，
+config.json 会被重写为纯 JSON 格式，你手动添加的注释会丢失。
+建议在启动游戏前编辑，或者直接使用 GMCM。
+
+
+如何理解倍率
+
+所有倍率默认都是 1.0，表示原版，不做改动。
+当倍率大于 1.0 时，会在原版掉落基础上额外生成更多物品。
+
+示例:
+  1.0 = 原版，MOD 不生效
+  2.0 = 双倍掉落
+  3.0 = 三倍掉落
+  1.5 = 额外增加 50%
+
+最小值: 1.0
+如果你在 config.json 中填写小于 1.0 的值，加载时会自动修正为 1.0。
+作者没有找到一种稳定且干净的方法，把掉率降低到原版以下。
+
+在 GMCM 中，倍率按 0.5 递增，例如 1.0、1.5、2.0 ... 10.0。
+如果你手动编辑本文件，可以填写任意浮点数，例如 1.25、3.75。
+不过仍然建议使用 1.0 / 1.5 / 2.0 / 依此类推。
+
+
+如何理解品质
+
+品质设置会强制掉落物拥有指定品质。
+它只对支持品质的内容生效，例如:
+果树、蘑菇、采集物、以及部分加工机器产物。
+
+有效值:
+  -1 = 默认，不修改品质，保持原版行为
+   0 = 普通
+   1 = 银
+   2 = 金
+   4 = 铱星
+  注意: 星露谷跳过了 "3"，所以金星是 2，铱星是 4。
+
+任何其他值都会在加载时自动修正为 -1，也就是关闭。
+
+设置品质后，会覆盖物品原本应有的品质。
+示例: 植物学家天赋原本会让采集物变成铱星(4)。
+如果这里把品质设为金星(2)，最终结果就是金星。
+如果你想保留铱星，就把这里设为铱星，或者改回默认。
+
+蘑菇品质说明:
+  MushroomMinQuality 和 ForageMinQuality 在蘑菇上会互相影响。
+  对作为采集物拾取的蘑菇来说，如果两者都设置了，
+  MushroomMinQuality 会覆盖 ForageMinQuality。
+  例子: ForageMinQuality = 银(1)，MushroomMinQuality = 金(2)
+  那么蘑菇会变成金星，其他采集物则是银星。
+
+
+SECTION: BASIC RESOURCES
+
+WoodDropMultiplier
+  砍伐 Oak、Maple、Pine、Palm、Green Rain 树时的额外木材倍率。
+  默认值: 1.0
+
+MahoganyDropMultiplier
+  桃花心木树、大树桩、大木头(resource clumps)产出的额外硬木倍率。
+  默认值: 1.0
+
+StoneDropMultiplier
+  石头、石矿点、石块巨岩产出的额外石头倍率。
+  默认值: 1.0
+
+ClayDropMultiplier
+  黏土矿点(ID 818)和虫斑点挖出黏土时的额外黏土倍率。
+  如果虫斑点产出的是黏土，会自动使用这个值，而不是 ArtifactSpotDropMultiplier。
+  默认值: 1.0
+
+CoalDropMultiplier
+  煤矿点(普通和火山版本)的额外煤炭倍率。
+  默认值: 1.0
+
+WeedDropMultiplier
+  清理杂草时获得的额外纤维倍率。
+  同时也影响 Green Rain 特殊杂草掉落的纤维。
+  默认值: 1.0
+
+HayDropMultiplier
+  割草时进入筒仓的额外干草倍率。
+  默认值: 1.0
+
+MossDropMultiplier
+  额外苔藓倍率，作用于以下三种来源:
+    1. 用镰刀收割长有苔藓的树
+    2. Green Rain 杂草掉落苔藓
+    3. 破坏 Green Rain 期间出现的苔藓灌木(2x2 丛)
+  这里不会影响 Mossy Seed 的稀有掉落(苔藓灌木 5% 掉率)。
+  种子的掉落由 Seed Multiplier 控制。
+  默认值: 1.0
+
+
+SECTION: ORES
+
+CopperDropMultiplier
+  铜矿点和淘盘获得的铜矿石额外倍率。
+  默认值: 1.0
+
+IronDropMultiplier
+  铁矿点和淘盘获得的铁矿石额外倍率。
+  默认值: 1.0
+
+GoldDropMultiplier
+  金矿点(包括火山区域)和淘盘获得的金矿石额外倍率。
+  默认值: 1.0
+
+IridiumDropMultiplier
+  铱矿点、陨石(resource clump)、以及淘盘获得的铱矿石额外倍率。
+  默认值: 1.0
+
+RadioactiveDropMultiplier
+  放射性矿点的额外放射性矿石倍率。
+  默认值: 1.0
+
+关于淘盘:
+  淘盘没有单独倍率。
+  淘到哪种矿石，就套用对应矿石的倍率。
+  其他淘盘产物(精炼石英、芋头块茎、鱼、神秘盒子)不受任何倍率影响。
+
+
+SECTION: GEMS & SPECIALS
+
+MineralDropMultiplier
+  宝石矿点掉落的额外宝石倍率，包括:
+  紫水晶、钻石、红宝石、翡翠、黄水晶、绿宝石、海蓝宝石。
+  同时也影响 Mystic Stone 的加权随机掉落
+  (五彩碎片 / 铱矿石 / 钻石)。
+  默认值: 1.0
+
+GeodeDropMultiplier
+  晶球矿点掉落的额外晶球倍率(普通、冰冻、岩浆、万象晶球)。
+  这里只影响直接掉出的晶球物品，不影响铁匠铺敲开的内部内容。
+  默认值: 1.0
+
+CinderShardDropMultiplier
+  火山矿洞中煤渣碎片矿点的额外倍率。
+  默认值: 1.0
+
+CalicoEggDropMultiplier
+  沙漠节期间 Calico Egg 石头的额外彩蛋倍率。
+  默认值: 1.0
+
+BoneDropMultiplier
+  挖掘现场骨头矿点(ID 816, 817)掉落骨头碎片的额外倍率。
+  不影响化石类物品(823, 824)，因为它们是另一类掉落。
+  默认值: 1.0
+
+
+SECTION: FISH PONDS
+
+ForceDailySpawn
+  如果设为 true，只要产物槽为空，鱼塘每天都一定会产出物品。
+  这会覆盖鱼塘原本的产出概率。
+  可用值: true / false
+  默认值: false
+
+PondQuantityMultiplier
+  鱼塘非鱼籽产物的最小/最大数量倍率。
+  默认值: 1.0
+
+ForceRoeOnly
+  如果设为 true，鱼塘将不再产出任何非鱼籽物品，只会产鱼籽。
+  如果同时启用 ForceDailySpawn，则鱼籽会每日必出。
+  可用值: true / false
+  默认值: false
+
+RoeQuantityMultiplier
+  鱼塘鱼籽产量的最小/最大数量倍率。
+  默认值: 1.0
+
+
+SECTION: GATHERING
+
+FruitTreeDropMultiplier
+  摇晃果树时获得额外水果的倍率，适用于所有果树种类。
+  被雷击中的果树(掉煤而不是水果)不会受影响。
+  额外水果的品质与果树当前品质等级一致。
+  默认值: 1.0
+
+FruitTreeMinQuality
+  果树水果的最低品质。
+  参见前文“如何理解品质”。
+  默认值: -1 (关闭)
+
+TapperProductMultiplier
+  树液器和重型树液器产物的数量倍率。
+  包括: Oak Resin、Maple Syrup、Pine Tar，以及蘑菇树树液器产物
+  (Red Mushroom、Purple Mushroom、Common Mushroom)。
+  默认值: 1.0
+
+MushroomDropMultiplier
+  所有蘑菇来源的额外掉落倍率，包括:
+    1. 摇晃蘑菇树
+    2. 收取 Mushroom Log 的产物
+    3. 拾取作为采集物出现的蘑菇(农场洞穴、矿洞、火山、野外)
+  对于“作为采集物拾取”的蘑菇，
+  MushroomDropMultiplier 与 ForageQuantityMultiplier 取更高者生效。
+  默认值: 1.0
+
+MushroomMinQuality
+  强制所有蘑菇掉落的品质，包括蘑菇树、Mushroom Log、采集蘑菇。
+  对采集蘑菇而言，MushroomMinQuality 与 ForageMinQuality 取更高者生效。
+  参见前文“如何理解品质”。
+  默认值: -1 (关闭)
+
+ForageQuantityMultiplier
+  直接拾取采集物时的额外数量倍率。
+  包括: 野外采集物(浆果、蕨菜等)、春葱、农场洞穴蘑菇、矿洞/火山蘑菇。
+  不影响农作物。
+  默认值: 1.0
+
+ForageMinQuality
+  额外采集物复制品的最低品质。
+  对蘑菇来说，ForageMinQuality 与 MushroomMinQuality 取更高者生效。
+  参见前文“如何理解品质”。
+  默认值: -1 (关闭)
+
+
+SECTION: MACHINES
+
+KegOutputMultiplier
+  酒桶产物额外数量倍率(Wine、Juice、Beer、Mead、Pale Ale)。
+  默认值: 1.0
+
+KegMinQuality
+  酒桶产物最低品质。
+  默认值: -1 (关闭)
+
+PreservesOutputMultiplier
+  腌菜罐产物额外数量倍率(Jelly、Pickles)。
+  默认值: 1.0
+
+PreservesMinQuality
+  腌菜罐产物最低品质。
+  默认值: -1 (关闭)
+
+CheeseOutputMultiplier
+  奶酪机产物额外数量倍率(Cheese、Goat Cheese)。
+  默认值: 1.0
+
+CheeseMinQuality
+  奶酪机产物最低品质。
+  默认值: -1 (关闭)
+
+MayonnaiseOutputMultiplier
+  蛋黄酱机产物额外数量倍率
+  (Mayonnaise、Duck Mayo、Void Mayo、Dinosaur Mayo)。
+  默认值: 1.0
+
+MayonnaiseMinQuality
+  蛋黄酱机产物最低品质。
+  默认值: -1 (关闭)
+
+BeeHouseOutputMultiplier
+  蜂房产出蜂蜜的额外数量倍率。
+  默认值: 1.0
+
+LoomOutputMultiplier
+  织布机产出布料的额外数量倍率。
+  默认值: 1.0
+
+OilMakerOutputMultiplier
+  榨油机产出 Oil 或 Truffle Oil 的额外数量倍率。
+  默认值: 1.0
+
+FurnaceOutputMultiplier
+  熔炉产出金属锭的额外数量倍率
+  (Copper、Iron、Gold、Iridium Bar、Refined Quartz)。
+  默认值: 1.0
+
+SeedMakerOutputMultiplier
+  种子制造机产出种子的额外数量倍率。
+  无论最终产出哪种种子，都受这个倍率影响。
+  默认值: 1.0
+
+
+SECTION: COMBAT & EXPLORATION
+
+MonsterDropMultiplier
+  怪物死亡时的一般掉落物额外倍率。
+  例如蝙蝠翅膀、史莱姆、布、虚空精华、混合种子，
+  以及任何没有专属倍率的怪物掉落。
+  但以下怪物掉落会优先使用自己的专属倍率:
+    Coal            -> CoalDropMultiplier
+    Copper Ore      -> CopperDropMultiplier
+    Iron Ore        -> IronDropMultiplier
+    Gold Ore        -> GoldDropMultiplier
+    Iridium Ore     -> IridiumDropMultiplier
+    Radioactive Ore -> RadioactiveDropMultiplier
+    Bone Fragments  -> BoneDropMultiplier
+  默认值: 1.0
+
+ArtifactSpotDropMultiplier
+  虫斑点(地上蠕动的虫点)挖出的额外物品倍率。
+  包括文物、混合种子和其他虫点掉落。
+  如果虫点掉出的是黏土，则改用 ClayDropMultiplier。
+  神秘盒子掉落不受影响。
+  默认值: 1.0
+
+
+故障排查
+
+MOD 没有效果?
+  启动时查看 SMAPI 控制台里是否有 [CDR] 错误信息。
+  如果提示 "Could not find"，说明某个游戏方法没有找到，
+  可能是游戏更新导致兼容性失效，请去 Nexus 查看是否有 MOD 更新版本。
+
+设置无法保存?
+  建议在游戏内通过 GMCM 保存。
+  如果你在游戏运行时手动编辑 config.json，这些修改通常要到下次启动才会生效。
+
+品质没有变化?
+  品质类设置必须填写 0 或更高的值，-1 代表关闭。
+
+为什么我设置了小于 1.0，结果又被改回 1.0?
+  这是作者刻意设计的行为。
+  这个 MOD 不能把原版掉率压到原版以下，
+  所以所有低于 1.0 的值都会在加载时自动修正为 1.0。

@@ -1,12 +1,10 @@
 ﻿{
   "Name": "自动开门",
   "Author": "Rakiin aKa ScheKaa",
-  "Version": "2.5.4",
+  "Version": "2.5.5",
   "Description": "自动开关栅栏门",
   "UniqueID": "Rakiin.AutomaticGates",
   "EntryDll": "AutomaticGates.dll",
   "MinimumApiVersion": "4.0",
-  "UpdateKeys": [
-    "Nexus:3109"
-  ]
+  "UpdateKeys": ["Nexus:3109"]
 }

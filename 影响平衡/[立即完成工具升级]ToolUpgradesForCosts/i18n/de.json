@@ -1,0 +1,13 @@
+{
+  "crafting-window": "Ich kann deine Werkzeuge leistungsfähiger machen... aber gegen Aufpreis.",
+  "instant-offer-text": "Möchtest du {cost}g zahlen, damit ich das Werkzeug sofort aufwerte?",
+  "post-purchase-dialogue": "Ich werde in zwei Tagen fertig sein. Komm dann wieder.",
+  "speed-boost-cost-dialogue": "Sofortige Verbesserung möglich! Zusatzkosten: {costPercentage}% der Upgrade-Kosten.",
+  "cost-applied": "Aufpreis für sofortige Fertigstellung: {CostAmount}g",
+  "not-enough-money": "Nicht genug Geld für die Sofort-Aufwertung! Benötigt: {CostAmount}g",
+  "clint-insufficient-funds": "Huch! Du hast nicht genug Geld für die sofortige Aufwertung. Ich erledige das trotzdem für dich, komm in zwei Tagen wieder!",
+  "clint-thanks": "Danke. Ich hoffe, das verbesserte Werkzeug ist nützlich für dich!",
+  "instant-yes": "Ja",
+  "instant-no": "Nein",
+  "clint-decline": "In Ordnung, ich mache es – komm in zwei Tagen wieder."
+}
