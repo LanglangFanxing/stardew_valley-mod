@@ -1,0 +1,12 @@
+{
+  "Name": "钓鱼助手2",
+  "Description": "一个智能的钓鱼助手，可以自动处理复杂的钓鱼任务。",
+  "Author": "ChibiKyu",
+  "Version": "2.5.2",
+  "UniqueID": "ChibiKyu.FishingAssistant2",
+  "EntryDll": "FishingAssistant2.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [
+    "Nexus:5815"
+  ]
+}
