@@ -1,0 +1,18 @@
+﻿{
+   "Name": "指环王",
+   "Author": "bcmpinc",
+   "Version": "7.9",
+   "Description": "我有20根指头(包括脚趾)，每个指头都戴一个指环不过分吧。",
+   "UniqueID": "bcmpinc.WearMoreRings",
+   "EntryDll": "WearMoreRings.dll",
+   "MinimumApiVersion": "4.0.0",
+   "UpdateKeys": [
+      "Nexus:3214"
+   ],
+   "Dependencies": [
+      {
+         "UniqueID": "bcmpinc.StardewHack",
+         "MinimumVersion": "7.1"
+      }
+   ]
+}
